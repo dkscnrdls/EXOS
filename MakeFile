@@ -1,0 +1,10 @@
+all: kernel.bin
+
+kernel.bin: kernel.o
+    ld -o kernel.bin -Ttext 0x1000 --oformat binary kernel.o
+
+kernel.o: kernel.c
+    gcc -ffreestanding -m32 -c kernel.c -o kernel.o
+
+clean:
+    rm -f kernel.o kernel.bin
