@@ -1,8 +1,8 @@
 # EXOS
-Extension (확장)의 뜻을 가진 운영체제
-Bits = 64bit
-BootLoader = asm, GRUB 2
-Created by 남지훈
+Extension (확장)의 뜻을 가진 운영체제 \n
+Bits = 64bit \n
+BootLoader = asm, GRUB 2 \n
+Created by 남지훈 \n
 공개안함
 
 # 빌드 방법
