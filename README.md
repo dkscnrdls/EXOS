@@ -15,9 +15,10 @@ Created by Ramsa
 # 만드는 방법
 필요한것 : Docker, VSCode
 1. Docker 디스크 만들기
-2. docker run --rm -it -v "%cd%":/root/env exos-buildenv (이 명령어 치면 리눅스 같이 뜹니다.)
-3. 프로젝트 폴더에 복사 (여기 C드라이브에)
-4. 빌드 방법 참조
+2. docker build buildenv -t exos-buildenv
+3. docker run --rm -it -v "%cd%":/root/env exos-buildenv (이 명령어 치면 리눅스 같이 뜹니다.)
+4. 프로젝트 폴더에 복사 (여기 C드라이브에)
+5. 빌드 방법 참조
 # gcc 빌드 오류시
 1. 해더파일 참조 오류일 수 있습니다. 해더파일은 intf 폴더에 삽입해주세요. 그리고 해더파일이름.c는 impl폴더 x86_64에 삽입해주세요.
 2. 문법 오류일 수 있습니다.
